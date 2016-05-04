@@ -4,7 +4,7 @@ var express    = require('express');
 var app        = express();                
 var bodyParser = require('body-parser');
 var routes = require('./app/routes/index.js');
-var api = require('./app/api/timestamp.js');
+var api = require('./app/api/code.js');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/public', express.static(process.cwd() + '/public'));
